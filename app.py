@@ -26,7 +26,7 @@ def login():
                 st.session_state.logged_in = True
                 st.session_state.username = user_type
                 st.session_state.current_user = user_type # Đồng bộ cho các file module
-                st.session_state.role = "Manager" if user_type == "Manager" else "Staff"
+                st.session_state.role = "Manager" if (len(user_list) > 0 and user_type == user_list[0]) else "Staff"
                 st.session_state.need_rerun = True
 
 # Không dùng on_click callback nữa để tránh lỗi rerun
