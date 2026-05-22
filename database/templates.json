@@ -1,0 +1,20 @@
+{
+    "Trống (Tự nhập)": [],
+    "Quy trình tiêu chuẩn": [
+        {
+            "id": 1,
+            "task_name": "Kiểm tra yêu cầu",
+            "done": false
+        },
+        {
+            "id": 2,
+            "task_name": "Lên phương án",
+            "done": false
+        },
+        {
+            "id": 3,
+            "task_name": "Thực thi & Báo cáo",
+            "done": false
+        }
+    ]
+}
