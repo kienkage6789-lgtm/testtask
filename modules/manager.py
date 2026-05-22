@@ -114,7 +114,7 @@ def render():
             col1, col2, col3 = st.columns([2, 1, 1])
             with col1:
                 customer = st.text_input("Tên Khách Hàng / Dự Án")
-                assignee = st.selectbox("Người Phụ Trách", ["Staff 1", "Staff 2", "Staff 3"])
+                assignee = st.selectbox("Người Phụ Trách", [u for u in db_engine.load_users() if u != "Manager"])
             with col2:
                 deadline_date = st.date_input("Hạn Chót (Ngày)")
             with col3:
